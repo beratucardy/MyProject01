@@ -1,0 +1,117 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: var(--color1);
+}
+:root {
+  --color1: rgb(88, 2, 124);
+  --color2: aliceblue;
+  --color3: black;
+  --color4: white;
+}
+* {
+  box-sizing: border-box;
+}
+.box {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box-left {
+  background-color: var(--color2);
+  flex: 1 1 320px;
+  height: 96vh;
+  border-radius: 15px 0 0 15px;
+  margin-top: 0.2rem;
+}
+.box-right {
+  background-image: url("../img/bg-login.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 2 2 640px;
+  height: 96vh;
+  border-radius: 0 15px 15px 0;
+  margin-top: 0.2rem;
+  min-width: 320px;
+}
+.box-left .first-link {
+  display: inline-block;
+  padding: 2rem;
+  text-decoration: none;
+  color: var(--color3);
+}
+.box-left .first-link::before {
+  font: var(--fa-font-solid);
+  content: "\f137";
+  padding-right: 5px;
+}
+.container-left {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
+}
+.container-left .second-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  background-color: var(--color1);
+  color: var(--color4);
+  border-radius: 8px;
+  border: 1px solid var(--color1);
+  margin-top: 3rem;
+  box-shadow: 0 1px 4px black;
+}
+.container-left .second-link:hover {
+  border: 1px solid var(--color1);
+  background-color: var(--color2);
+  color: var(--color1);
+}
+.container-left h2 {
+  margin-bottom: 5rem;
+}
+.container-left input {
+  padding: 0.5rem;
+  background-color: var(--color2);
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid var(--color3);
+}
+.container-left .first-input {
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+.container-left .second-input {
+  width: 20rem;
+}
+.box-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color4);
+}
+.container-right h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+.container-right h4 {
+  margin-top: 10px;
+  font-weight: bolder;
+}
